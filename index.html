@@ -1,7 +1,25 @@
 
 <html>
 <head>
-    <style>p, ul {
+    <style>
+           /* ಫ್ಲೆಕ್ಸ್‌ಬಾಕ್ಸ್ ಕಂಟೈನರ್ */
+.courses-container {
+    display: flex;             /* ಫ್ಲೆಕ್ಸ್‌ಬಾಕ್ಸ್ ಆನ್ ಮಾಡುತ್ತದೆ */
+    flex-wrap: wrap;           /* ಜಾಗ ಸಾಕಾಗದಿದ್ದರೆ ಮುಂದಿನ ಸಾಲಿಗೆ ಹೋಗುತ್ತದೆ */
+    justify-content: center;   /* ಕಾರ್ಡ್‌ಗಳನ್ನು ಮಧ್ಯದಲ್ಲಿ ಜೋಡಿಸುತ್ತದೆ */
+    gap: 20px;                 /* ಕಾರ್ಡ್‌ಗಳ ನಡುವೆ ಅಂತರ ನೀಡುತ್ತದೆ */
+    padding: 20px;
+}
+
+/* ಪ್ರತಿಯೊಂದು ಕೋರ್ಸ್ ಕಾರ್ಡ್ */
+.course-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border-top: 5px solid #004a99; /* ಕಾಲೇಜು ಬಣ್ಣದ ಬಾರ್ */ p, ul {
     text-align: justify;
     padding: 0 10px;
 }
@@ -53,14 +71,15 @@
     <div style="padding: 20px; line-height: 1.6;">
     <h2 style="color: #004a99; border-bottom: 2px solid #004a99;">ನಮ್ಮ ಕಾಲೇಜಿನ ಬಗ್ಗೆ</h2>
     <p>ನಮ್ಮ ಕಾಲೇಜು ಟಿ. ನರಸೀಪುರ ಭಾಗದ ಪ್ರತಿಷ್ಠಿತ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ. ಇಲ್ಲಿ ಉತ್ತಮ ಗ್ರಂಥಾಲಯ, ಸುಸಜ್ಜಿತ ಪ್ರಯೋಗಾಲಯ ಮತ್ತು ಕ್ರೀಡಾ ಸೌಲಭ್ಯಗಳಿವೆ.</p>
-    
-    <h3 style="color: #004a99;">ಲಭ್ಯವಿರುವ ಕೋರ್ಸ್‌ಗಳು:</h3>
-    <ul>
-      
-        <li>B.A. (ಕಲೆ)</li>
-        <li>B.Com (ವಾಣಿಜ್ಯ)</li>
-        <li>B.Sc (ವಿಜ್ಞಾನ)</li>
-        <li>BBA </li>
+
+    <h3 style="text-align: center; color: #004a99;">ಲಭ್ಯವಿರುವ ಕೋರ್ಸ್‌ಗಳು:</h3>
+<div class="courses-container">
+    <div class="course-card">B.A. (ಕಲೆ)</div>
+    <div class="course-card">B.Com (ವಾಣಿಜ್ಯ)</div>
+    <div class="course-card">B.Sc (ವಿಜ್ಞಾನ)</div>
+    <div class="course-card">BBA</div>
+</div>
+
         <div style="text-align: center; margin-top: 20px;">
     <h3 style="color: #004a99;">ನಮ್ಮ ಕಾಲೇಜು ಆವರಣ</h3>
 <div style="text-align: center; margin: 20px;">
